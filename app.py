@@ -9,7 +9,7 @@ li = [0]*9
 #taking inputs
 with st.expander("Age Groups"):
   st.markdown("""
-  Label       Value
+  Label \tValue
 - 12-14 years → 2
 - 15-17 years → 3
 - 18-20 years → 4
