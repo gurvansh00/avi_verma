@@ -1,7 +1,12 @@
 import streamlit as st
 from tensorflow.keras.models import load_model
 import numpy as np
-
+st.title("-----")
+st.subheader('here a short description of the app will come')
+st.markdown("""here we can add the steps
+- step 1
+- step 2
+""")
 #importing models
 mod1 = load_model('depression.h5')
 mod2 = load_model('anxiety.h5')
