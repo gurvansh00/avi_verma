@@ -6,6 +6,7 @@ import numpy as np
 mod1 = load_model('depression.h5')
 mod2 = load_model('anxiety.h5')
 li = [0]*9
+st.set_page_config(layout='wide')
 #taking inputs
 with st.expander("Age(ranges and values)"):
   st.markdown("""
