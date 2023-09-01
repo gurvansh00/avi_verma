@@ -43,33 +43,34 @@ with st.expander("Gender(ranges and values)"):
 - Female → 2
 - Other → -9""")
 li[4] = st.number_input('Gender',min_value=-10,value=0)
-with st.expander("Education(ranges and values)"):
+with st.expander("Marital Status(ranges and values)"):
   st.markdown("""
-- Special education → 1
-- 6th grade to 8th grade → 2
-- 9th grade to 11th grade → 3
-- 12th grade (or pursuing GED) → 4""")
+- Never married → 1
+- Now married → 2
+- Separated → 3
+- Divorced → 4""")
 li[5] = st.number_input('Marital',min_value=0)
-with st.expander("Education(ranges and values)"):
+with st.expander("SED(ranges and values)"):
   st.markdown("""
-- Special education → 1
-- 6th grade to 8th grade → 2
-- 9th grade to 11th grade → 3
-- 12th grade (or pursuing GED) → 4""")
+- An inability to learn that cannot be explained by intellectual, sensory, or health factors → 2
+- An inability to build or maintain satisfactory interpersonal relationships with peers and teachers → 2
+- Inappropriate types of behavior or feelings under normal circumstances → 2
+- A general pervasive mood of unhappiness or depression → 2
+- A tendency to develop physical symptoms or fears associated with personal or school problems → 2""")
 li[6] = st.number_input('SED',min_value=0)
-with st.expander("Education(ranges and values)"):
+with st.expander("Employment(ranges and values)"):
   st.markdown("""
-- Special education → 1
-- 6th grade to 8th grade → 2
-- 9th grade to 11th grade → 3
-- 12th grade (or pursuing GED) → 4""")
+- Full-time → 1
+- Part-time → 2
+- Unemployed → 4
+- Not in the labor force → 5""")
 li[7] = st.number_input('Employment',min_value=0)
-with st.expander("Education(ranges and values)"):
+with st.expander("Residential(ranges and values)"):
   st.markdown("""
-- Special education → 1
-- 6th grade to 8th grade → 2
-- 9th grade to 11th grade → 3
-- 12th grade (or pursuing GED) → 4""")
+- Homeless → 1
+- Private Residence → 2
+- Other → 3
+""")
 li[8] = st.number_input('Residential',min_value=0)
 
 def predict_mh(new_x_example):
