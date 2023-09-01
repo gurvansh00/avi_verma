@@ -7,6 +7,14 @@ mod1 = load_model('depression.h5')
 mod2 = load_model('anxiety.h5')
 li = [0]*9
 #taking inputs
+with st.expander("Age Groups"):
+  st.markdown("""
+  Age (Label, Value):
+- 12-14 years → 2
+- 15-17 years → 3
+- 18-20 years → 4
+- 21-24 years → 5
+""")
 li[0]=st.number_input('Age',min_value=0)
 li[1] = st.number_input('Education',min_value=0)
 li[2] = st.number_input('Ethnic',min_value=0)
