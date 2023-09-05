@@ -101,4 +101,12 @@ def predict_mh(new_x_example):
 
 bt = st.button('My Result')
 if bt:
-  st.write(predict_mh(li))
+  dic = predict_mh(li)
+  if dic.get('Depression') == 0 and dic.get('Anxiety') == 0:
+    st.write("You dont't seem to be depressed or anxious")
+  if dic.get('Depression') == 1 and dic.get('Anxiety') == 0:
+    st.write('You seem to have depression like symptoms please consult a Psychiatrists')
+  if dic.get('Depression') == 0 and dic.get('Anxiety') == 1:
+    st.write('You seem to have anxiety like symptoms please consult a Psychiatrists')
+  if dic.get('Depression') == 1 and dic.get('Anxiety') == 1:
+    st.write('You seem to have depression and anxiety like symptoms please consult a Psychiatrists')
