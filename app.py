@@ -1,6 +1,15 @@
 import streamlit as st
 from tensorflow.keras.models import load_model
 import numpy as np
+
+st.markdown("""
+<style>
+.stApp {
+    font-size:30px !important;
+    font-family: 'Courier New', monospace;
+}
+</style>
+""", unsafe_allow_html=True)
 st.title("Smhyal")
 st.subheader('Supporting Mental Health via. AI Learning')
 st.markdown("""Supporting Mental Health in Youth via. AI Learning, or Smhyal, is an all-in-one tool for simple self-diagnosis for two of the most common, yet critical, psychological disorders among youth: anxiety and depression.
@@ -8,11 +17,4 @@ The Smhyal algorithm is based on a modified version of an artificial neural netw
 """)
 st.write('None of the data entered in the form or the diagnosis outputs are ever stored or traced.')
 st.sidebar.success('Select the pages')
-st.markdown("""
-<style>
-.big-font {
-    font-size:30px !important;
-    font-family: 'Courier New', monospace;
-}
-</style>
-""", unsafe_allow_html=True)
+
